@@ -1,0 +1,221 @@
+.banner {
+    &-heading {
+        &-card {
+            // background-image: url("/img/banner-heading-bg.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            .hbtn {
+                right: 0;
+                top: 0;
+                @include xxl {
+                    right: -4px;
+                    top: 2px;
+                }
+                @include lg {
+                    right: -4px;
+                    top: 5px;
+                }
+            }
+            .headingtitle {
+                margin-right: 120px;
+                @include xxl {
+                    margin-right: 50px;
+                }
+                @include xl {
+                    margin-right: 50px;
+                }
+                @include lg {
+                    margin-right: 50px;
+                }
+                @include mmd {
+                    margin-right: 35px;
+                }
+            }
+            .headingdes {
+                margin-right: 65px;
+                @include xxl {
+                    margin-right: 5px;
+                }
+                @include xl {
+                    margin-right: 5px;
+                }
+                @include lg {
+                    margin-right: 5px;
+                }
+                @include mmd {
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+    &-body {
+        .banner-main-card {
+            // background-image: url("/img/bannermbg1.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            .maindes {
+                margin-right: 140px;
+                @include xxl {
+                    margin-right: 0;
+                }
+                @include xl {
+                    margin-right: 0;
+                }
+                @include lg {
+                    margin-right: 0;
+                }
+                @include mmd {
+                    margin-right: 0;
+                }
+            }
+            .cardbtn {
+                right: 0;
+                bottom: 0;
+                @include lg {
+                    right: -5px;
+                    bottom: -1px;
+                }
+                @include sm {
+                    right: -7px;
+                    bottom: -1px;
+                }
+            }
+        }
+    }
+    // .swiper{
+    //     overflow: visible;
+    // }
+    .swiper-pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .swiper-pagination-bullet {
+        --width: 10px;
+        width: var(--width);
+        height: var(--width);
+        background-color: black;
+        border: 2px solid white;
+    }
+    .swiper-pagination-bullet-active {
+        --width: 14px;
+        width: var(--width);
+        height: var(--width);
+        background-color: $primary;
+        border-width: 0px !important;
+    }
+    // .swiper-pagination-bullets{
+    //     bottom:  -28px !important;
+    // }
+}
+
+.trading {
+    &-body {
+        .list-heading {
+            border-radius: 10px 10px 0px 0px;
+        }
+    }
+    .headingtitle {
+        margin-right: 120px;
+        @include xxl {
+            margin-right: 50px;
+        }
+        @include xl {
+            margin-right: 50px;
+        }
+        @include lg {
+            margin-right: 50px;
+        }
+        @include mmd {
+            margin-right: 35px;
+        }
+    }
+    .headingdes {
+        margin-right: 65px;
+        @include xxl {
+            margin-right: 5px;
+        }
+        @include xl {
+            margin-right: 5px;
+        }
+        @include lg {
+            margin-right: 5px;
+        }
+        @include mmd {
+            margin-right: 0px;
+        }
+    }
+    .page {
+        .active {
+            border-radius: 6px;
+            background: #1B1D22;
+        }
+    }
+    //   .swiper{
+    //     overflow: visible;
+    // }
+    .swiper-pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .swiper-pagination-bullet {
+        --width: 10px;
+        width: var(--width);
+        height: var(--width);
+        background-color: black;
+        border: 2px solid white;
+    }
+    .swiper-pagination-bullet-active {
+        --width: 14px;
+        width: var(--width);
+        height: var(--width);
+        background-color: $primary;
+        border-width: 0px !important;
+    }
+    // .swiper-pagination-bullets{
+    //     bottom:  -28px !important;
+    // }
+}
+
+.flexauto {
+    flex: 0 0 auto;
+}
+
+.heading-img {
+    @include sm {
+        width: 100px !important;
+        height: 88px !important;
+    }
+}
+
+.page {
+    .active {
+        border-radius: 6px;
+        background: #1B1D22;
+    }
+}
+
+.swiper-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-pagination-bullet {
+    --width: 10px;
+    width: var(--width);
+    height: var(--width);
+    background-color: black;
+    border: 2px solid white;
+}
+
+.swiper-pagination-bullet-active {
+    --width: 14px;
+    width: var(--width);
+    height: var(--width);
+    background-color: $primary;
+    border-width: 0px !important;
+}

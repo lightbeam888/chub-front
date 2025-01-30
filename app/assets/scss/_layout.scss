@@ -1,0 +1,35 @@
+.layout {
+    --left-width: 300px;
+    --top-height: 88px;
+    @include lg {
+        --left-width: 260px;
+    }
+    @include md {
+        --top-height: 76px;
+    }
+    @include sm {
+        --top-height: 64px;
+    }
+    &-main {
+        &::-webkit-scrollbar {
+            --width: 7px;
+            width: var(--width);
+            height: var(--width);
+        }
+    }
+    &-left {
+        @include mmd {
+            position: fixed;
+            left: 0;
+            top: 0;
+            height: calc(100vh - 0px);
+            z-index: 99;
+            background-color: $bg;
+            transform: translateX(-100%);
+            @include transition;
+            &.show-menu {
+                transform: translateX(0);
+            }
+        }
+    }
+}

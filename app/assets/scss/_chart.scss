@@ -1,0 +1,35 @@
+.apexcharts {
+    &-graphical {
+        &>line {
+            display: none;
+        }
+    }
+    &-gridlines {
+        &-horizontal {
+            & line {
+                stroke: rgba($color: #1D1F26, $alpha: .60);
+            }
+        }
+    }
+    &-gridline {
+        stroke: rgba($color: #1D1F26, $alpha: .60);
+        &+line {
+            stroke: rgba($color: #1D1F26, $alpha: .60);
+        }
+    }
+    &-2 {
+        &>div>div {
+            min-height: auto !important;
+        }
+    }
+}
+
+.apexcharts-yaxistooltip,
+.apexcharts-xaxistooltip {
+    background-color: #FF2021 !important;
+    border-radius: 8px !important;
+    &::after,
+    &::before {
+        display: none;
+    }
+}

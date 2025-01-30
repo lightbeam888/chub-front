@@ -1,0 +1,310 @@
+.pairs {
+    & .swiper {
+        margin-bottom: 50px;
+    }
+    & .Table {
+        @include xxl {
+            overflow: auto;
+        }
+        &-body {
+            border-radius: 14px;
+            background-color: #0F1013;
+            @include xxl {
+                width: min-content;
+            }
+            @include xl {
+                width: min-content;
+            }
+            @include lg {
+                width: min-content;
+            }
+            @include mmd {
+                width: min-content;
+            }
+        }
+        & .tr {
+            @include xxl {
+                width: min-content;
+            }
+            @include xl {
+                width: min-content;
+            }
+            @include lg {
+                width: min-content;
+            }
+            @include mmd {
+                width: min-content;
+            }
+            display: flex;
+            align-items: center;
+            @include transition;
+            padding: 8px 16px;
+            &:not(:last-child) {
+                margin-bottom: 16px;
+            }
+            &:hover {
+                background-color: #1B1D22;
+                & .td {
+                    color: $white;
+                    & h4 {
+                        color: $white
+                    }
+                }
+            }
+            & .th {
+                color: #A6A6A6 !important;
+            }
+            &.header {
+                background-color: transparent;
+                border-bottom: 1px solid #1D1F26;
+                padding-bottom: 10px;
+                margin-bottom: 20px;
+            }
+            & .th,
+            & .td {
+                display: flex;
+                gap: 4px;
+                align-items: center;
+                flex: 0 0 auto;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                @include transition;
+                color: #F5F3F5;
+                & .logo {
+                    flex: 0 0 auto;
+                }
+                --extra:40px;
+                --xlWidth:100px;
+                @include sm {
+                    --xlWidth: 60px;
+                }
+                &:first-child {
+                    --width: 24%;
+                    width: var(--width);
+                    @include xxl {
+                        width: 350px;
+                    }
+                    @include xl {
+                        width: 350px;
+                    }
+                    @include lg {
+                        width: 350px;
+                    }
+                    @include mmd {
+                        width: 350px;
+                    }
+                    @include sm {
+                        width: 300px;
+                    }
+                    & .count {
+                        padding: 1px 4px;
+                        border-radius: 4px;
+                        border: 1px solid var(--stoke-color, #1D1F26);
+                        text-align: center;
+                        margin-right: 11px;
+                    }
+                }
+                &:nth-child(2) {
+                    --width: 12%;
+                    width: var(--width);
+                    @include xxl {
+                        width: calc(var(--xlWidth) + var(--extra));
+                    }
+                    @include xl {
+                        width: calc(var(--xlWidth) + var(--extra));
+                    }
+                    @include lg {
+                        width: calc(var(--xlWidth) + var(--extra));
+                    }
+                    @include mmd {
+                        width: calc(var(--xlWidth) + var(--extra));
+                    }
+                    @include sm {
+                        width: calc(var(--xlWidth) + var(--extra));
+                    }
+                }
+                &:nth-child(3) {
+                    --width: 9%;
+                    width: var(--width);
+                    @include xxl {
+                        width: calc(var(--xlWidth) + var(--extra));
+                    }
+                    @include xl {
+                        width: calc(var(--xlWidth) + var(--extra));
+                    }
+                    @include lg {
+                        width: calc(var(--xlWidth) + var(--extra));
+                    }
+                    @include mmd {
+                        width: calc(var(--xlWidth) + var(--extra));
+                    }
+                    @include sm {
+                        width: calc(var(--xlWidth) + var(--extra));
+                    }
+                }
+                &:nth-child(4) {
+                    --width: 10.32%;
+                    width: var(--width);
+                    @include xxl {
+                        width: calc(var(--xlWidth) + var(--extra));
+                    }
+                    @include xl {
+                        width: calc(var(--xlWidth) + var(--extra));
+                    }
+                    @include lg {
+                        width: calc(var(--xlWidth) + var(--extra));
+                    }
+                    @include mmd {
+                        width: calc(var(--xlWidth) + var(--extra));
+                    }
+                    @include sm {
+                        width: calc(var(--xlWidth) + var(--extra));
+                    }
+                }
+                &:nth-child(5) {
+                    --width: 7.70%;
+                    width: var(--width);
+                    @include xxl {
+                        width: calc(var(--xlWidth) + var(--extra));
+                    }
+                    @include xl {
+                        width: calc(var(--xlWidth) + var(--extra));
+                    }
+                    @include lg {
+                        width: calc(var(--xlWidth) + var(--extra));
+                    }
+                    @include mmd {
+                        width: calc(var(--xlWidth) + var(--extra));
+                    }
+                    @include sm {
+                        width: calc(var(--xlWidth) + var(--extra));
+                    }
+                }
+                &:nth-child(6) {
+                    --width: 7.70%;
+                    width: var(--width);
+                    @include xxl {
+                        width: calc(var(--xlWidth) + var(--extra));
+                    }
+                    @include xl {
+                        width: calc(var(--xlWidth) + var(--extra));
+                    }
+                    @include lg {
+                        width: calc(var(--xlWidth) + var(--extra));
+                    }
+                    @include mmd {
+                        width: calc(var(--xlWidth) + var(--extra));
+                    }
+                    @include sm {
+                        width: calc(var(--xlWidth) + var(--extra));
+                    }
+                }
+                &:nth-child(7) {
+                    --width: 7.70%;
+                    width: var(--width);
+                    @include xxl {
+                        width: calc(var(--xlWidth) + var(--extra));
+                    }
+                    @include xl {
+                        width: calc(var(--xlWidth) + var(--extra));
+                    }
+                    @include lg {
+                        width: calc(var(--xlWidth) + var(--extra));
+                    }
+                    @include mmd {
+                        width: calc(var(--xlWidth) + var(--extra));
+                    }
+                    @include sm {
+                        width: calc(var(--xlWidth) + var(--extra));
+                    }
+                }
+                &:nth-child(8) {
+                    --width: 8.19%;
+                    width: var(--width);
+                    @include xxl {
+                        width: calc(var(--xlWidth) + var(--extra));
+                    }
+                    @include xl {
+                        width: calc(var(--xlWidth) + var(--extra));
+                    }
+                    @include lg {
+                        width: calc(var(--xlWidth) + var(--extra));
+                    }
+                    @include mmd {
+                        width: calc(var(--xlWidth) + var(--extra));
+                    }
+                    @include sm {
+                        width: calc(var(--xlWidth) + var(--extra));
+                    }
+                }
+                &:nth-child(9) {
+                    --width: 6.55%;
+                    width: var(--width);
+                    @include xxl {
+                        width: calc(var(--xlWidth) + var(--extra));
+                    }
+                    @include xl {
+                        width: calc(var(--xlWidth) + var(--extra));
+                    }
+                    @include lg {
+                        width: calc(var(--xlWidth) + var(--extra));
+                    }
+                    @include mmd {
+                        width: calc(var(--xlWidth) + var(--extra));
+                    }
+                    @include sm {
+                        width: calc(var(--xlWidth) + var(--extra));
+                    }
+                }
+                &:nth-child(10) {
+                    --width: 6.55%;
+                    width: var(--width);
+                    @include xxl {
+                        width: calc(var(--xlWidth) + var(--extra));
+                    }
+                    @include xl {
+                        width: calc(var(--xlWidth) + var(--extra));
+                    }
+                    @include lg {
+                        width: calc(var(--xlWidth) + var(--extra));
+                    }
+                    @include mmd {
+                        width: calc(var(--xlWidth) + var(--extra));
+                    }
+                    @include sm {
+                        width: calc(var(--xlWidth) + var(--extra));
+                    }
+                    justify-content: end;
+                    padding-right: 18px;
+                }
+            }
+        }
+    }
+    .page {
+        .active {
+            border-radius: 6px;
+            background: #1B1D22;
+        }
+    }
+    .swiper-pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .swiper-pagination-bullet {
+        --width: 10px;
+        width: var(--width);
+        height: var(--width);
+        background-color: black;
+        border: 2px solid white;
+    }
+    .swiper-pagination-bullet-active {
+        --width: 14px;
+        width: var(--width);
+        height: var(--width);
+        background-color: $primary;
+        border-width: 0px !important;
+    }
+}

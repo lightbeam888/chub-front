@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+// 
+body {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: calc(26px/16px);
+    color: $text !important;
+    font-family: $font-1;
+    background-color: $bg !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $heading;
+}
+
+p {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none !important;
+    @include transition;
+}
+
+input,
+textarea,
+button {
+    padding: 11px 30px;
+    border: 1px solid $border;
+    outline: none;
+    @include transition;
+    &:focus {
+        outline: none;
+        border-color: $primary !important;
+    }
+}
+
+
+/*Hide number spin button*/
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+// social 
+.social {
+    &-link {
+        --width: 48px;
+        width: var(--width);
+        height: var(--width);
+        background-color: $primary;
+        color: $heading;
+        box-shadow: 2px 2px 0 $black;
+        @include font-24;
+        &:hover {
+            box-shadow: 0 0 0;
+        }
+        @include sm {
+            --width: 38px;
+            & svg {
+                width: 18px;
+                height: 18px;
+            }
+        }
+    }
+}
+
+#root {
+    overflow: hidden;
+}
+
+.overflow-auto {
+    @include custom-scroll(5px);
+}
+
+.flex0auto {
+    flex: 0 0 auto;
+}
+
+.swiper {
+    overflow: visible !important;
+    &-pagination {
+        --swiper-pagination-top: 100%;
+        margin-top: 24px;
+    }
+}
